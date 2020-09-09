@@ -4,9 +4,24 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+// import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+
+import { statsReducer } from './Reducers/statsReducer';
+
+// import { combineReducers } from './Reducers/index'
+
+const store = createStore(statsReducer, applyMiddleware(thunk));
+// const store = createStore(combineReducers, applyMiddleware(thunk, logger));
+// const store = createStore(() => {}, applyMiddleware(thunk));
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -29,11 +29,23 @@
 ### Task 2: Minimum Viable Product
 
 Task 2A: 
+  (Ryan Hamblins Codesandbox: https://codesandbox.io/s/kitty-fahcts-forked-jzzel)
   - [ ] Build a React Redux app
+    - [x] Create store
+      - [x] Wrap App with Provider and pass store
+    - [x] Build Component
+      - [] Connect state with "Connect" and "mapStateToProps" 
+        - [] Create actions file with actions
+        - [] Pass action through connect
+        - [] Route state and actions through props to components (from connect)
+
+    - [] Middleware
+    - [] Thunk
+
 Task 2B: 
   - [ ] Fetch data inside an async action creator from an API of your choosing
     - https://documenter.getpostman.com/view/10808728/SzS8rjbc
-    
+
 Task 2C; 
   - [ ] Add the data from the API to the Redux store
 Task 2D; 
@@ -56,3 +68,5 @@ Take the app as far as you can go! Styling, redux hooks, another API, an input t
 ## Task 5: Submission Format
 * [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
 * [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
+
+
