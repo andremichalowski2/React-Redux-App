@@ -20,11 +20,11 @@
     - [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 
   Task 1B: Dependencies
-    - [] Push commits: git push origin `<firstName-lastName>`.
-    - [ ] Add your team lead as collaborator on Github.
-    - [ ] Run `npx create-react-app app --use-npm` to make a CRA app.
-    - [ ] CD into the react app `cd app`.
-    - [ ] Start up the app using `npm start`.
+    - [x] Push commits: git push origin `<firstName-lastName>`.
+    - [x] Add your team lead as collaborator on Github.
+    - [x] Run `npx create-react-app app --use-npm` to make a CRA app.
+    - [x] CD into the react app `cd app`.
+    - [x] Start up the app using `npm start`.
 
 ### Task 2: Minimum Viable Product
 
@@ -32,6 +32,8 @@ Task 2A:
   - [ ] Build a React Redux app
 Task 2B: 
   - [ ] Fetch data inside an async action creator from an API of your choosing
+    - https://documenter.getpostman.com/view/10808728/SzS8rjbc
+    
 Task 2C; 
   - [ ] Add the data from the API to the Redux store
 Task 2D; 
