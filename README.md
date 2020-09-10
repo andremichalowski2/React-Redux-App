@@ -35,7 +35,7 @@ Task 2A:
       - [x] Wrap App with Provider and pass store
     - [x] Build Component
       - [x] Connect state with "Connect" and "mapStateToProps" 
-        - [] Create actions file with actions
+        - [x] Create actions file with actions
         - [] Pass action through connect
         - [] Route state and actions through props to components (from connect)
 
