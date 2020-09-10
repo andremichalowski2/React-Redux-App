@@ -36,7 +36,7 @@ Task 2A:
     - [x] Build Component
       - [x] Connect state with "Connect" and "mapStateToProps" 
         - [x] Create actions file with actions
-        - [] Pass action through connect
+        - [x] Pass action through connect
         - [] Route state and actions through props to components (from connect)
 
     - [] Middleware
