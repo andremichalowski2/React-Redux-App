@@ -34,7 +34,7 @@ Task 2A:
     - [x] Create store
       - [x] Wrap App with Provider and pass store
     - [x] Build Component
-      - [] Connect state with "Connect" and "mapStateToProps" 
+      - [x] Connect state with "Connect" and "mapStateToProps" 
         - [] Create actions file with actions
         - [] Pass action through connect
         - [] Route state and actions through props to components (from connect)
@@ -45,6 +45,7 @@ Task 2A:
 Task 2B: 
   - [ ] Fetch data inside an async action creator from an API of your choosing
     - https://documenter.getpostman.com/view/10808728/SzS8rjbc
+    - https://official-joke-api.appspot.com/jokes/ten
 
 Task 2C; 
   - [ ] Add the data from the API to the Redux store

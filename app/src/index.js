@@ -9,7 +9,7 @@ import { Provider } from 'react-redux';
 // import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
-import { statsReducer } from './Reducers/statsReducer';
+import statsReducer from './store/Reducers/statsReducer';
 
 // import { combineReducers } from './Reducers/index'
 

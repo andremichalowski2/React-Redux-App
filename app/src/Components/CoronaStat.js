@@ -1,8 +1,14 @@
 import React from 'react'
 
-const CoronaStat = () => {
+const CoronaStat = ({joke}) => {
+  // console.log(joke)
   return(
-    <h3></h3>
+    <div>
+    <h3>Mapped: CoronaStat Componenent</h3>
+    <p>Hello! {joke}</p>
+    {/* <div>{props.joke.id} | {props.joke.joke}</div> */}
+    {/* <div>[props.joke]</div> */}
+    </div>
   )
 }
 

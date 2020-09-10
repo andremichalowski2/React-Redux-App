@@ -4,37 +4,24 @@ import CoronaStat from './CoronaStat';
 
 import { connect } from 'react-redux';
 
-const CoronaStats = () => {
+const CoronaStats = ({jokes}) => {
+  console.log('state coming from statS', jokes)
   return(
     <div>
-      <h3>CORONA STATS</h3>
-        <h3> Test </h3>
+      <h3>Title: CoronaStats Component</h3>
         <CoronaStat />
+        {jokes.map((j) => {
+          return <CoronaStat joke={j} key={j.id}/>
+        })}
     </div>
   )
 }
 
-export default CoronaStats;
+function mapStateToProps(state) {
+  // console.log(state)
+  return {
+    jokes: state
+  }
+}
 
-// import React from "react";
-// import { connect } from "react-redux";
-// import Fact from "./Fact";
-
-// function CatFacts(props) {
-//   return (
-//     <>
-//       <h3>Cat Facts</h3>
-//       {props.facts.map((fact) => {
-//         return <Fact key={fact._id} fact={fact} />;
-//       })}
-//     </>
-//   );
-// }
-
-// function mapStateToProps(state) {
-//   return {
-//     facts: state.facts
-//   };
-// }
-
-// export default connect(mapStateToProps, {})(CatFacts);
+export default connect(mapStateToProps, {})(CoronaStats);
