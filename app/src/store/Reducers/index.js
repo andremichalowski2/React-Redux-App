@@ -1,10 +1,8 @@
-// import { combineReducers } from 'redux';
+import { combineReducers } from 'redux';
 
-// import { statsReducer as stats } from './statsReducer';
+import { statsReducer as stats } from './statsReducer';
 
-// export default combineReducers({
-//   return(
-//     stats,
-//   )
-// })
+export default combineReducers({
+  stats
+})
 

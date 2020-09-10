@@ -1,26 +1,31 @@
-export const initialState = [
-    {
-      id: 1, 
-      funny: "funny"
-    },
-    {
-      id: 2, 
-      funny: "notfunny"
+export const initialState = {
+  confirmedCases: '',
+  recoveredCases: '',
+  deaths: '',
+  isFetching: false,
+  date: '',
+  error: ''
+}
+
+
+export const statsReducer = (state = initialState, action) => {
+  switch(action.type) {
+    case 'FETCH_CASES_START': 
+    return{
+        ...state,
+        isFetching: true
     }
 
-  // id: 8,
-  // type: 'general',
-  // setup: 'Why couldn\'t the pilot fly the plane',
-  // punchline: 'Because he was a tomato',
-  // loading: true
-]
-
-
-const statsReducer = (state = initialState, action) => {
-  switch(action.type) {
+    case 'FETCH_CASES_SUCCESS':
+      return{
+        ...state,
+        isFetching: false,
+        confirmedCases: action.payload.confirmed.value,
+        recoveredCases: action.payload.recovered.value,
+        deaths: action.payload.deaths.value,
+        date: new Date(action.payload.lastUpdate).toDateString()
+      }
     default:
       return state;
   }
 }
-
-export default statsReducer;
