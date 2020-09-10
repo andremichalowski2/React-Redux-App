@@ -30,17 +30,17 @@
 
 Task 2A: 
   (Ryan Hamblins Codesandbox: https://codesandbox.io/s/kitty-fahcts-forked-jzzel)
-  - [ ] Build a React Redux app
+  - [x] Build a React Redux app
     - [x] Create store
       - [x] Wrap App with Provider and pass store
     - [x] Build Component
       - [x] Connect state with "Connect" and "mapStateToProps" 
         - [x] Create actions file with actions
         - [x] Pass action through connect
-        - [] Route state and actions through props to components (from connect)
+        - [x] Route state and actions through props to components (from connect)
 
-    - [] Middleware
-    - [] Thunk
+    - [x] Middleware
+    - [x] Thunk
 
 Task 2B: 
   - [ ] Fetch data inside an async action creator from an API of your choosing
