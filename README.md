@@ -33,6 +33,7 @@ Task 2A:
   - [x] Build a React Redux app
     - [x] Create store
       - [x] Wrap App with Provider and pass store
+
     - [x] Build Component
       - [x] Connect state with "Connect" and "mapStateToProps" 
         - [x] Create actions file with actions
@@ -42,17 +43,23 @@ Task 2A:
     - [x] Middleware
     - [x] Thunk
 
+    - Future workflow: 
+        base component
+        reducer
+        actions
+        hoc components
+
 Task 2B: 
-  - [ ] Fetch data inside an async action creator from an API of your choosing
+  - [x] Fetch data inside an async action creator from an API of your choosing
     - https://documenter.getpostman.com/view/10808728/SzS8rjbc
     - https://official-joke-api.appspot.com/jokes/ten
 
 Task 2C; 
-  - [ ] Add the data from the API to the Redux store
+  - [x] Add the data from the API to the Redux store
 Task 2D; 
-  - [ ] Display the data from the store in a component
+  - [x] Display the data from the store in a component
 Task 2E; 
-  - [ ] _Some_ styling must be applied. It can be basic, but the app must not only use browser default stylings
+  - [x] _Some_ styling must be applied. It can be basic, but the app must not only use browser default stylings
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 

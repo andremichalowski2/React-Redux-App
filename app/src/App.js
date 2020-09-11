@@ -8,9 +8,8 @@ import { fetchCases } from './store/actions/coronaActions';
 
 function App(props) {
 
-  useEffect((props) => {
+  useEffect(() => {
     props.fetchCases()
-
   },[])
 
   return (
@@ -21,7 +20,7 @@ function App(props) {
       <CoronaStats 
         title = {'Infected'} 
         description = {'active cases'} 
-        // cases = {props.confirmedCases} 
+        cases = {props.confirmedCases} 
         date = {props.date} />
       </div>
       <div className = 'recovered'>
@@ -47,7 +46,7 @@ function App(props) {
 
 const mapStateToProps = state => {
   return{
-    // confirmedCases: state.statsReducer.confirmedCases,
+    confirmedCases: state.statsReducer.confirmedCases,
     recoveredCases: state.statsReducer.recoveredCases,
     deaths: state.statsReducer.deaths,
     isFetching: state.statsReducer.isFetching,
@@ -56,6 +55,6 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps, {fetchCases})(App);
+export default connect(mapStateToProps, {fetchCases} )(App);
 
 
